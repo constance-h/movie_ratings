@@ -33,11 +33,11 @@ class Movie(db.Model):
     poster_path = db.Column(db.String)
 
     #ratings = a list of Rating objects
-    
+
     def __repr__(self):
         return f'<Movie movie_id={self.movie_id} title={self.title}>'
 
-class Rating(db.Models):
+class Rating(db.Model):
 
     __tablename__ = 'ratings'
 

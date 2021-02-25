@@ -1,6 +1,6 @@
 """CRUD operations"""
 
-from model import db, User, Movie, Rating, conntect_to_db
+from model import db, User, Movie, Rating, connect_to_db
 
 def create_user(email, password):
     """Create and return a new user"""
@@ -36,6 +36,6 @@ def create_rating(user, movie, score):
 
 
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     from server import app
     connect_to_db(app)
